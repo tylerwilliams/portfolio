@@ -1,0 +1,27 @@
+<%inherit file="base.html"/>
+
+<%block name="bodycontent">
+    <p class="title">Electricalily</p>
+    
+    <p class="image"><a href="http://fr.ac.tl/blog/wp-content/uploads/2011/04/sideview_full.jpg"><img class="size-full wp-image-463 aligncenter" title="i actually finished it late at night... it looks good in the light too :)" src="http://fr.ac.tl/blog/wp-content/uploads/2011/04/sideview_small.jpg" alt="electric lilies" width="400" height="299" /></a></p>    
+
+    Having a smartphone can be a blessing and a curse. It's ridiculously easy to get in the habit of relying on it for everything -- from directions to weather reports to emails. I wanted a notifier that would show me information like weather and inbox status without distracting me with a beep or requiring me to carry my phone around. I also wanted it to be beautiful and look natural in our house. I designed the electricalily flowers to meet these goals.
+
+    <p class="image"><a href="http://fr.ac.tl/blog/wp-content/uploads/2011/04/text_full.jpg"><img class="aligncenter size-full wp-image-471" title="typewritten" src="http://fr.ac.tl/blog/wp-content/uploads/2011/04/text_small.jpg" alt="" width="400" height="399" /></a></p>
+    &nbsp;
+
+    The three flowers are made of <a href="http://www.origami-instructions.com/origami-lily.html" target="_blank">origami lily</a> petals attached to biodegradable straw stems. (these straws are opaque and diffuse light better without the ugly red-line down the side) I folded each flower from recycled typewritten todo lists or notes. Inside each flower/stem combination resides a pair of 5mm LEDs, one RGB and one green. The green LED illuminates the flower stem while the RGB LED colors the flower.
+
+    <p class="image"><a href="http://fr.ac.tl/blog/wp-content/uploads/2011/04/board_full.jpg"><img class="aligncenter size-full wp-image-473" title="1.25 inches! (advanced circuits minimum size)" src="http://fr.ac.tl/blog/wp-content/uploads/2011/04/board_small.jpg" alt="" width="400" height="251" /></a></p>
+
+    A computer controls each flower through a custom board I designed for the project in <a href="http://www.cadsoftusa.com/">eaglecad</a>. I ordered the board through <a href="http://www.4pcb.com/" target="_blank">advanced circuits</a> (following <a href="http://colinkarpfinger.com/blog/2010/ordering-pcbs-designed-with-eagle/" target="_blank">this</a> tutorial b/c it had been a while) and I got really good results. It was a challenge to make a board small enough to fit through the neck of the bottle populated with connectors, and to qualify for the advanced circuits education deal I couldn't make it smaller than 1.25" square. I ended up with these dimensions exactly. I didn't know if it would even fit until I soldered everything up and tried it!
+
+    I'm still working out different schemes for presenting information through some predefined colors or maybe a change in color. (the two things I want to show are the weather and email notifications) It's pretty easy to change things around at this point because I'm controlling the flowers through python and I don't have to change the firmware.
+
+    <p class="image"><a href="https://github.com/tylerwilliams/electricalily"><img class="aligncenter size-full wp-image-480" title="github" src="http://fr.ac.tl/blog/wp-content/uploads/2011/04/github.png" alt="" width="400" height="281" /></a></p>
+
+    This project is still a little bit of a work in progress as I play with how to present information more 'smartly', but hopefully it covers some useful bits for people doing AVR development or making their own boards. I put all the code (firmware and software) and circuits on github, and everything is GPL.
+
+    <a href="https://github.com/tylerwilliams/electricalily">https://github.com/tylerwilliams/electricalily</a>
+</%block>
+

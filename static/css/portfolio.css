@@ -1,0 +1,172 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* main sections */
+body {
+    background: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.4em;
+    height: 100%;
+}
+
+#body-container {
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 20px;
+    min-height: 800px; 
+    background: #fcfcfa;
+}
+
+#header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+#header h2 {
+    color: rgb(185,56,23);
+    margin-bottom: 15px;
+}
+#line {
+    padding-top:10px;
+    overflow: hidden;
+}
+#sidebar {
+    float: left;
+    width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    min-height: 100%;
+    min-height: 800px;
+}
+
+#body-content {
+    float: right;
+    width: 680px;
+    border-left: #000 1px solid;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+#footer {
+    margin:0px auto;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: 3em;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(93, 103, 113, 1);
+    background:#FFF;
+}
+
+#footer a {
+    color: rgb(185,56,23);
+}
+
+/* text styles and decoration */
+h3 {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 120%;
+    color: rgb(50, 50, 50);
+    letter-spacing: 1;
+}
+h4 {
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 18;
+    color: rgb(50, 50, 50);
+    letter-spacing: 1;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 42px;
+    padding: 0 0 20px 0;
+    color: rgb(100, 100, 100);
+    letter-spacing: 1;
+}
+
+
+#sidebar-content a:link, #sidebar-content a:visited, #sidebar-content a:active {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 200;
+    font-size: 120%;
+    color: rgb(50, 50, 50);
+    letter-spacing: 1;
+    line-height: 150%;
+}
+
+#sidebar-content a:hover {
+    color: rgb(185,56,23);
+}
+
+.title {
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 24px;
+    padding: 0 0 5px 0;
+    color: black;
+    letter-spacing: 1;
+}
+
+.image {
+    text-align:center;
+    margin: 20px;
+}
+
+p {
+    padding: 10px;
+}

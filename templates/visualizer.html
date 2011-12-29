@@ -1,0 +1,14 @@
+<%inherit file="base.html"/>
+
+<%block name="bodycontent">
+    <p class="title">visualizer.fm</p>
+    
+    <p>In preperation for my trip to Mongolia, I was asked to prepare some kind of sensor project that could be built with limited materials and used with the XO laptop. After brainstorming with Dale Joachim at the Media Lab, I decided to build a small turbine to measure water flow.</p>
+
+    <p>Originally I tried something that would generate a small current using coils and magnets, but those materials aren't always easy to find. My second design uses a plastic bottle, pop can, shis-kabob stick (or any straight stick really), straw, and a little wire.</p>
+
+    <p class="image"><embed type="video/quicktime" src="http://lightworks.mit.edu/misc/turbine.mp4" width="320" height="256" id="turbine.mp4" autostart="false" targetcache="true"></p>
+
+    <p>Here it is in action. You can see the light never goes out completely, that's because enough current is flowing through the water (~1mA?) to light up the LED, but the signal can be filtered in software to get a nice pulse train and then you can measure the rotor rpm, and the corresponding water flow rate.</p>
+
+</%block>
