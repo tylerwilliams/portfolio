@@ -1,5 +1,8 @@
 # encoding: utf-8
-import os
+import sys, os
+reload(sys)
+sys.setdefaultencoding('utf-8')
+sys.path.append(os.path.dirname(os.path.abspath( __file__ )))
 import web
 import random
 from web.contrib.template import render_mako
