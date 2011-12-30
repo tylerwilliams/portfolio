@@ -1,0 +1,9 @@
+<%inherit file="base.html"/>
+
+<%block name="bodycontent">
+    % if body_override is not None:
+        ${body_override}
+    % else:
+        Welcome!
+    % endif
+</%block>

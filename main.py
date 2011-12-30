@@ -29,8 +29,12 @@ random_images = [
         'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/04/board_small.jpg',
     },
     {
+        'link':'/electricalily',
+        'src':'/static/images/pwmcloseup.jpg',
+    },
+    {
         'link':'/stringer',
-        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/02/strings.jpg'
+        'src':'/static/images/stringer.png'
     },
     {
         'link':'/turbine',
@@ -46,7 +50,27 @@ random_images = [
     },
     {
         'link':'/medea',
-        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/02/font_making.png'
+        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/02/circuit_brd.png'
+    },
+    {
+        'link':'/echospot',
+        'src':'/static/images/echospot.png'
+    },
+    {
+        'link':'/misc',
+        'src':'/static/images/fpbox.jpg'
+    },
+    {
+        'link':'/misc',
+        'src':'/static/images/wirewrap.jpg'
+    },
+    {
+        'link':'/misc',
+        'src':'/static/images/remix.png'
+    },
+    {
+        'link':'/misc',
+        'src':'/static/images/mega128.png'
     },
 ]
 def random_image():

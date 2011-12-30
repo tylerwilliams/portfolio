@@ -64,13 +64,14 @@ body {
 #header {
     padding-top: 40px;
     padding-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 35px;
     padding-right: 10px;
+/*    text-align: right;    */
 }
 
 #header h2 {
     color: rgb(185,56,23);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #line {
     padding-top:10px;
