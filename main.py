@@ -12,8 +12,6 @@ urls = (
         '/(.*)', 'main'
         )
 
-app = web.application(urls, globals(), autoreload=True)
-
 render = render_mako(
         directories=[os.path.join(cwd, 'templates')],
         input_encoding='utf-8',
@@ -37,6 +35,18 @@ random_images = [
     {
         'link':'/turbine',
         'src':'/static/images/turbine.png'
+    },
+    {
+        'link':'/visualizer',
+        'src':'/static/images/visualized.png'
+    },
+    {
+        'link':'/medea',
+        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/01/circuit_export.png'
+    },
+    {
+        'link':'/medea',
+        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/02/font_making.png'
     },
 ]
 def random_image():
@@ -67,5 +77,4 @@ class main:
         # render
         return render_func(sidebar=active_pages, body_override=body_override)
 
-if __name__ == "__main__":
-    app.run()
+application = web.application(urls, globals()).wsgifunc()

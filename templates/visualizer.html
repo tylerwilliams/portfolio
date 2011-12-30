@@ -3,12 +3,16 @@
 <%block name="bodycontent">
     <p class="title">visualizer.fm</p>
     
-    <p>In preperation for my trip to Mongolia, I was asked to prepare some kind of sensor project that could be built with limited materials and used with the XO laptop. After brainstorming with Dale Joachim at the Media Lab, I decided to build a small turbine to measure water flow.</p>
-
-    <p>Originally I tried something that would generate a small current using coils and magnets, but those materials aren't always easy to find. My second design uses a plastic bottle, pop can, shis-kabob stick (or any straight stick really), straw, and a little wire.</p>
-
-    <p class="image"><embed type="video/quicktime" src="http://lightworks.mit.edu/misc/turbine.mp4" width="320" height="256" id="turbine.mp4" autostart="false" targetcache="true"></p>
-
-    <p>Here it is in action. You can see the light never goes out completely, that's because enough current is flowing through the water (~1mA?) to light up the LED, but the signal can be filtered in software to get a nice pulse train and then you can measure the rotor rpm, and the corresponding water flow rate.</p>
-
+    <p>In collaboration with a friend, Jason Sundram, I built a music visualizer to let people explore music in new ways and test some of the capabilities of HTML5. Our visualizer can search for audio, pull the associated analysis from <a href="http://the.echonest.com">The Echo Nest</a> and play back the audio while simultaneously displaying a unique visualization based on the analysis. Absolutely everything is done in javascript using the canvas and audio elements. (although we do fall back to flash for audio playback in firefox)</p>
+    
+    <p class="image"><a href="/static/images/visualized.png"><img class="image" title="visualizerheart" src="/static/images/visualized.png" /></a></p>
+    
+    <p>The included visualizations look at different features of the audio including tempo, pitch, loudness, and timbre across multiple segments. It turns out that it's very difficult to make a visualization that "feels right" in sync with audio unless you make heavy use of very obvious features like loudness. This is probably why 99% of all visualizers don't go deeper than an FFT.</p>
+        
+    <p class="image">
+    <iframe src="http://player.vimeo.com/video/34351470?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </p>
+    
+    <p>Check the video above, or you can go try it yourself at <a href="http://visualizer.fm">visualizer.fm</a></p>
+    
 </%block>

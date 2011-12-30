@@ -152,6 +152,16 @@ h2 {
     color: rgb(185,56,23);
 }
 
+#sidebar-content .section li {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 200;
+    font-size: 120%;
+    color: black;
+    letter-spacing: 1;
+    line-height: 150%;
+}
+
 .title {
     text-align: center;
     font-family: Helvetica;
@@ -162,6 +172,17 @@ h2 {
     letter-spacing: 1;
 }
 
+img {
+    max-width:400px;
+    max-height:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    text-align:left;
+    margin-left: 40px;
+}
 .image {
     text-align:center;
     margin: 20px;

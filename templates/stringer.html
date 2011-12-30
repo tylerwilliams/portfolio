@@ -7,17 +7,19 @@
 
     <p class="image"><iframe src="http://player.vimeo.com/video/19934847?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
     
-    <p>Alex had ported the strings from his <a href="http://mta.me/">mta.me</a> demo to processing, so we first interfaced a kinect using <a href="http://www.shiffman.net/p5/kinect/">Daniel Shiffman’s</a> kinect library. This worked really well for a proof of concept, but we wanted some better hand-tracking for our demo.</p>
-    <p>I setup <a href="http://www.openni.org/downloadfiles/openni-binaries/20-latest-unstable">OpenNI</a> and <a href="http://www.openni.org/downloadfiles/openni-compliant-middleware-binaries/33-latest-unstable">NITE</a> and got the PointTracker sample running with multiple hands. Everything went swimmingly, so I integrated an <a href="http://www.audiomulch.com/~rossb/code/oscpack/">OSC library</a> with the PointTracker to send OSC messages to Processing. (thanks <a href="http://runningwithdata.com/">Jason</a> for the c++ help!) Every time a new hand is detected, a message is sent to Processing with the hand ID, and from then on its coordinates as it moves are also sent.
+    <p>Alex had ported the strings from his <a href="http://mta.me/">mta.me</a> demo to Processing, so we first interfaced a kinect using <a href="http://www.shiffman.net/p5/kinect/">Daniel Shiffman’s</a> kinect library. This worked really well for a proof of concept, but we wanted some better hand-tracking for our demo.</p>
+    <p>I setup <a href="http://www.openni.org/downloadfiles/openni-binaries/20-latest-unstable">OpenNI</a> and <a href="http://www.openni.org/downloadfiles/openni-compliant-middleware-binaries/33-latest-unstable">NITE</a> and got the PointTracker sample running with multiple hands. Everything went swimmingly, so I integrated an <a href="http://www.audiomulch.com/~rossb/code/oscpack/">OSC library</a> with the PointTracker to send OSC messages to Processing. (thanks <a href="http://runningwithdata.com/">Jason</a> for the c++ help!) Every time a new hand is detected, a message is sent to Processing with a new hand ID, and from then on its coordinates as it moves are also sent.
     </p>
-    </p>If you want to try it yourself, here's how:
-        <ol>
-            <li>Download/Install libusb according to the <a href="https://github.com/OpenKinect/libfreenect/blob/master/README.asciidoc">libfreenect directions</a></li>
-            <li>Download/Install OpenNI</li>
-            <li>Download/Install the <a href="https://github.com/avin2/SensorKinect">kinect sensor module</a></li>
-            <li><a href="https://github.com/avin2/SensorKinect"></a>Download/Install NITE.</li>
-            <li>git clone "git@github.com:tylerwilliams/strings.git"</li>
-            <li>Download/Build/Run my <a href="/blog/wp-content/uploads/2011/02/HackedPointViewer.tar.gz">hacked PointTracker</a></li>
-        </ol>
+    <p> You can see a little bit of "stickiness" in the above video where strings are getting stuck in a plucked state and not vibrating. This is a bug we later worked out. Here's <a href="http://vimeo.com/19935703">another</a> video with the fix.
+    </p>
+   <p>If you want to try it yourself, here's how
+            <ul class="list">
+                <li>Download/Install libusb according to the <a href="https://github.com/OpenKinect/libfreenect/blob/master/README.asciidoc">libfreenect directions</a></li>
+                <li>Download/Install OpenNI</li>
+                <li>Download/Install the <a href="https://github.com/avin2/SensorKinect">kinect sensor module</a></li>
+                <li><a href="https://github.com/avin2/SensorKinect"></a>Download/Install NITE.</li>
+                <li>git clone "git@github.com:tylerwilliams/strings.git"</li>
+                <li>Download/Build/Run my <a href="/blog/wp-content/uploads/2011/02/HackedPointViewer.tar.gz">hacked PointTracker</a></li>
+        </ul>
     </p>
 </%block>
