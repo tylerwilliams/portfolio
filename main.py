@@ -75,6 +75,14 @@ random_images = [
         'link':'/misc',
         'src':'/static/images/mega128_small.jpg'
     },
+    {
+        'link':'/0-scope',
+        'src':'/static/images/scope.png'
+    },
+    {
+        'link':'/0-scope',
+        'src':'/static/images/finished_out.png'
+    },    
 ]
 
 def random_image():

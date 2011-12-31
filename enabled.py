@@ -9,7 +9,7 @@ active_pages = [
     ('Medea Hack', 'medea'),
     ('Stringer', 'stringer'),
     ('echo-spot.com', 'echospot'),
-    ('Photographs', 'photos'),
+    ('Photographs and Video', 'photos'),
     ('Homopolar Motor', 'homopolar'),
     ('Miscellany', 'misc'),
     ('Coding', 'coding'),    

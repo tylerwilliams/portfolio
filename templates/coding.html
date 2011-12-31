@@ -1,9 +1,16 @@
 <%inherit file="base.html"/>
 
 <%block name="bodycontent">
-    % if body_override is not None:
-        ${body_override}
-    % else:
-        Welcome!
-    % endif
+    <p class="title">Codes</p>
+    
+    <p>For a while, after reading about <a href="http://en.wikipedia.org/wiki/Kryptos">Kryptos</a>, I was very interested in ciphers. Below are some small programs to encode a block of text in different ways.</p>
+    
+    <p><script src="https://gist.github.com/1542420.js?file=alberti.py"></script></p>
+    
+    <p>This is my initial implementation of an Alberti cipher, which is a polyalphabetic substitution cipher. In a normal substitution cipher, letters are substituted with other letters. In a polyalphabetic cipher, different alphabets are used throughout the message. The way the Alberti cipher denotes a change in alphabet is by using a Capital letter.</p>
+    
+    <p><script src="https://gist.github.com/1542444.js?file=playfair.py"></script></p>
+    
+    <p>This code shows how the Playfair cipher encodes strings. The Playfair cipher is a digraph substitution cipher, meaning it encodes pairs of letters, rather than just characters. Playfair is also a symmetric encryption technique, which means the same key used to encode the message is used to decode the message.</p>
+    
 </%block>

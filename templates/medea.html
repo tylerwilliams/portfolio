@@ -3,7 +3,7 @@
 <%block name="bodycontent">
     <p class="title">Medea Vodka Display</p>
     
-    <p>The Medea Vodka display is a really neat piece of kit. It's basically a 5 by 25 pixel LED display that you can program. It just so happens to be wrapped around a bottle of vodka.</p>
+    <p>The Medea Vodka display is a really neat piece of kit. It's basically a 5x25 pixel LED display that you can program. It just so happens to be wrapped around a bottle of vodka.</p>
     <p style="text-align: center;"><a href="http://fr.ac.tl/blog/wp-content/uploads/2011/01/medea.jpg"><img class="aligncenter size-full wp-image-244" title="vodka" src="/static/images/medea.jpg" /></a></p>
     <p>I haven't been able to find it for sale anywhere around Cambridge (supreme, libby's), but for one glorious day a rep was selling it at the liquor store in Davis Sq., and I snagged a bottle. Apparently there are different colors, but blue was all that was available when I got mine.</p>
     <p class="image"><a href="http://fr.ac.tl/blog/wp-content/uploads/2011/01/circuit_annotated1.jpg"><img class="aligncenter size-full wp-image-417" title="annotated circuit" src="/static/images/circuit_annotated1.jpg" /></a></p>
@@ -13,19 +13,20 @@
     <p >Using a multimeter and Eagle CAD I tried to sketch out the circuit a little bit to help myself with programming an AVR to drive the display. This is what I came up with:</p>
     <p class="image"><a href="/static/images/circuit_export.png"><img class="aligncenter size-full wp-image-256" title="eagle_schematic" src="/static/images/circuit_export.png"/></a></p>
     <p >It's not perfect, but it should convey the basic idea.</p>
-    <p >Hopefully this helps you get started playing with this display, if you can find one. It's especially cool to find that a display like this that isn't tamper proofed with gobs of epoxy. Props to Medea for that! 
+    <p >Hopefully this helps you get started playing with this display, if you can find one. It's especially cool to find that a display like this that isn't tamper proofed with gobs of epoxy.</p>
     
-    <p>After spending some time understanding how the Medea vodka LED display was wired, I really wanted to use it in some kind of project. I had some LINX wireless modules lying around, so I made a wireless scrolling LED marquee. I had never worked with a scrolling display before, so I had to start from scratch. This is how I made it...</p>
+    <p>After spending some time understanding how the Medea vodka LED display was wired, I really wanted to use it in some kind of project. I had some LINX wireless modules lying around, so I made a wireless scrolling LED marquee. I had never worked with a scrolling display before, so I had to start from scratch.</p>
 
     <p class="image"><a href="/static/images/completed.jpg"><img src="/static/images/completed.jpg" alt="" title="completed display"/></a></p>
 
     <p>The first thing I had to do was figure out how to control the LEDs. The way this LED display is driven (like most) is with shift registers.  There are 4 shift registers, each with 8 outputs for up to 32 pins. Only 30 are used; they're connected to the 25 columns and 5 rows of the LED matrix. Because an entire row or column must be illuminated at once, the traditional way to display arbitrary 'stuff' is:
     <ul class="list">
-    	<li>Turn on/off all columns for row i.</li>
-    	<li>Illuminate row i.</li>
-    	<li>Let row i = i+1 and repeat the procedure.</li>
+        <li>Turn on/off all columns for row i.</li>
+        <li>Illuminate row i.</li>
+        <li>Let row i = i+1 and repeat the procedure.</li>
     </ul>
     </p>
+    
     <p>By doing this very quickly, thousands of times per second, the eye is fooled into thinking that all rows / columns are on/off at once.
     It didn't work the first time, but after figuring out the right offsets for each bit I was able to turn on and off any individual LED. I was still a ways from scrolling text though. In fact, before I could even display static text, I needed to get a font.</p>
 
