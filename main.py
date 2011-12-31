@@ -25,39 +25,39 @@ render = render_mako(
 random_images = [
     {
         'link':'/electricalily',
-        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/04/text_small.jpg',
+        'src':'/static/images/text_small.jpg',
     },
     {
         'link':'/electricalily',
-        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/04/board_small.jpg',
+        'src':'/static/images/board_small.jpg',
     },
     {
         'link':'/electricalily',
-        'src':'/static/images/pwmcloseup.jpg',
+        'src':'/static/images/pwmcloseup_small.jpg',
     },
     {
         'link':'/stringer',
-        'src':'/static/images/stringer.png'
+        'src':'/static/images/stringer_small.jpg'
     },
     {
         'link':'/turbine',
-        'src':'/static/images/turbine.png'
+        'src':'/static/images/turbine_small.jpg'
     },
     {
         'link':'/visualizer',
-        'src':'/static/images/visualized.png'
+        'src':'/static/images/visualized_small.jpg'
     },
     {
         'link':'/medea',
-        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/01/circuit_export.png'
+        'src':'/static/images/circuit_export.png'
     },
     {
         'link':'/medea',
-        'src':'http://fr.ac.tl/blog/wp-content/uploads/2011/02/circuit_brd.png'
+        'src':'/static/images/circuit_brd.png'
     },
     {
         'link':'/echospot',
-        'src':'/static/images/echospot.png'
+        'src':'/static/images/echospot_small.jpg'
     },
     {
         'link':'/misc',
@@ -69,13 +69,14 @@ random_images = [
     },
     {
         'link':'/misc',
-        'src':'/static/images/remix.png'
+        'src':'/static/images/remix_small.jpg'
     },
     {
         'link':'/misc',
-        'src':'/static/images/mega128.png'
+        'src':'/static/images/mega128_small.jpg'
     },
 ]
+
 def random_image():
     d = random.choice(random_images)
     blob = """<p style="text-align: center;">
